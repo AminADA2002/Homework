@@ -1,0 +1,319 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOhAcEN0QBV5fyY93P+w7Mm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AminADA2002/Homework/blob/main/HW1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZfD6lNnyt9DT",
+        "outputId": "c0383092-872a-45e9-cd69-deb7d5a2559d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Your name is Amin. Your age is 19\n"
+          ]
+        }
+      ],
+      "source": [
+        "name=\"Amin\"\n",
+        "age='19'\n",
+        "print('Your name is '+name +'. Your age is '+age)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=43\n",
+        "b=54\n",
+        "if(a==b):\n",
+        "  print(\"They are equal\")\n",
+        "else:\n",
+        "  print(\"They are not equal\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TzRQ4qtDuGgT",
+        "outputId": "2a8b0794-24fd-4002-8242-eaa8a4730d3b"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "They are not equal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=43\n",
+        "b=54\n",
+        "if(a>b):\n",
+        "  print('First number is greater than second')\n",
+        "else:\n",
+        "  print('First number is not greater than second')\n",
+        "\n",
+        "if(a<=b):\n",
+        "  print('First number is equal or less than second')\n",
+        "else:\n",
+        "  print('First number is not equal or less than second')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RnKbhiHuuJ0J",
+        "outputId": "b143a29d-afb4-4e44-b3ac-c657268b14cc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "First number is not greater than second\n",
+            "First number is equal or less than second\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for k in [1,2,3,4,5]:\n",
+        "  print (k,end=\",\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qb-j4AfUuM3Q",
+        "outputId": "6450c232-51d1-48cf-b7a7-20cd9438490a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1,2,3,4,5,"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=5\n",
+        "while x>0:\n",
+        "  print(x)\n",
+        "  x-=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ebSDJNaNuXk-",
+        "outputId": "01973400-114c-4f8a-f4b5-a1e426c7b934"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for k in [10,6,4,2,0]:\n",
+        "  print(k,end=\",\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UoVzIt1JveB6",
+        "outputId": "7e39f798-c889-4b29-9fd9-5d9069e5acb9"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10,6,4,2,0,"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import datetime \n",
+        "Year_of_birth = int(input(\"In which year you took birth:- \"))\n",
+        "current_year = datetime.datetime.now().year\n",
+        "Current_age = current_year - Year_of_birth\n",
+        "print(Current_age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LVmLr8MVwJz8",
+        "outputId": "83538ab6-375b-4cb9-a293-108490fd225a"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "In which year you took birth:- 2002\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class arithmetic:\n",
+        "  def addition(x,y):\n",
+        "    return x+y\n",
+        "  def substraction (x,y):\n",
+        "    return x-y\n",
+        "  def multiplication (x,y):\n",
+        "    return x*y\n",
+        "  def division (x,y):\n",
+        "    return x/y\n",
+        "arithmetic.multiplication(3,4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FP4TQpRkyodm",
+        "outputId": "8509f4fb-9270-485c-88eb-4c4ee1427405"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter number\"))\n",
+        "sum = 0\n",
+        "# loop from 1 to n\n",
+        "for num in range(1, n + 1, 1):\n",
+        "    sum = sum + num\n",
+        "print(\"Sum of first \", n, \"numbers is: \", sum)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EJrOFGZD1_Ep",
+        "outputId": "f12af153-e6be-439b-b378-b455914a9264"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number5\n",
+            "Sum of first  5 numbers is:  15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter number\"))\n",
+        "for i in range(1, n+1 ):\n",
+        "   if((i%3==0)):\n",
+        "      print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MxOrktty2XJ5",
+        "outputId": "ccf79c1e-90ef-4c8b-b44b-edc42f3fda2e"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number15\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
